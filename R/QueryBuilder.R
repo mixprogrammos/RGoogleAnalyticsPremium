@@ -24,7 +24,7 @@ QueryBuilder <- function(query.params.list) {
   title        <- query.params.list$title
   dimensions   <- query.params.list$dimensions
   filters      <- enc2utf8(query.params.list$filters)
-  segment      <- query.params.list$segment
+  segment      <- enc2utf8(query.params.list$segment)
 
 
   #' Sets the Query Parameters for the Query Builder Object and performs validation
