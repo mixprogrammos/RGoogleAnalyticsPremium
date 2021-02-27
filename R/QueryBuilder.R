@@ -23,7 +23,7 @@ QueryBuilder <- function(query.params.list) {
   start.date   <- query.params.list$start.date
   title        <- query.params.list$title
   dimensions   <- query.params.list$dimensions
-  filters      <- query.params.list$filters
+  filters      <- enc2utf8(query.params.list$filters)
   segment      <- query.params.list$segment
 
 
